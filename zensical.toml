@@ -19,7 +19,7 @@ nav = [
         { "Publishing to PyPI" = "features/publishing.md" },
         { "Testing with Pytest" = "features/pytest.md" },
         { "Test coverage with codecov" = "features/codecov.md" },
-        { "Documentation with MkDocs" = "features/mkdocs.md" },
+        { "Documentation with MkDocs/Zensical" = "features/docs_tool.md" },
         { "Compatibility testing with Tox" = "features/tox.md" },
         { "Containerization with Docker or Podman" = "features/docker.md" },
         { "Devcontainer with VSCode" = "features/devcontainer.md" }
@@ -90,3 +90,9 @@ link = "https://github.com/fpgmaas/cookiecutter-uv"
 [[project.extra.social]]
 icon = "fontawesome/brands/python"
 link = "https://pypi.org/project/cookiecutter-uv/"
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+[project.markdown_extensions.toc]
+permalink = true
