@@ -208,7 +208,6 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "deptry" },
-    { name = "mkdocs" },
     { name = "mkdocstrings-python" },
     { name = "mypy" },
     { name = "pre-commit" },
@@ -229,7 +228,6 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "deptry", specifier = ">=0.25.1" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocstrings-python", specifier = ">=1.0.3" },
     { name = "mypy", specifier = ">=1.19.1" },
     { name = "pre-commit", specifier = ">=4.5.1" },
