@@ -36,9 +36,17 @@ dev = [
     {%- endif %}
     {% if cookiecutter.codecov == 'y' %}"pytest-cov>=7.0.0",{% endif %}
     "ruff>=0.15.7",
-    {% if cookiecutter.mkdocs == 'y' %}"mkdocs>=1.6.1",
+    {%- if cookiecutter.docs_tool in ['mkdocs', 'zensical'] %}
+    {%- if cookiecutter.docs_tool == 'mkdocs' %}
+    "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.6",
-    "mkdocstrings[python]>=1.0.3",{% endif %}
+    "mkdocstrings[python]>=1.0.3",
+    {%- endif %}
+    {%- if cookiecutter.docs_tool == 'zensical' %}
+    "zensical>=0.0.26",
+    "mkdocstrings-python>=1.0.3",
+    {%- endif %}
+    {%- endif %}
 ]
 
 [build-system]
