@@ -88,7 +88,7 @@ def bake(cookies):
 
     Usage:
         def test_something(bake):
-            project = bake(mkdocs="n", codecov="y")
+            project = bake(docs_tool="none", codecov="y")
             assert project.has_file("pyproject.toml")
     """
 
