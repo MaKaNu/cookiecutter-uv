@@ -46,6 +46,7 @@ dev = [
     "ruff>=0.15.7",
     "mkdocstrings-python>=1.0.3",
     "zensical>=0.0.26",
+    "tomli>=2.4.1",
 ]
 
 [build-system]

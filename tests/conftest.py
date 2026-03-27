@@ -7,8 +7,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import pytest
-import tomllib
 import yaml
+
+try:
+    import tomllib  # type: ignore[import]
+except ImportError:
+    import tomli as tomllib  # type: ignore[import]
 
 
 @dataclass
